@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Doradca zawodowy</title>
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	<style>
+ 		.glyphicon.glyphicon-user{
+ 			font-size: 800%;
+ 		}
+ 		.glyphicon.glyphicon-remove{
+ 			color: #FF0000;
+ 		}
+ 		.table > tbody > tr:first-child > td {
+    		border: none;
+		}
+ 	</style>
+
+	<!--<link rel="stylesheet" type="text/css" href="start.css">-->
+</head>
+<body>
+	<div class= "container">
+		<div class="dropdown col-xs-5">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-user"></i></a>
+		         <ul class="dropdown-menu">
+				    <li><a href="#">Nazwa uzytkownika</a></li>
+				    <li><a href="#">Edytuj profil</a></li>
+				    <li class="divider"></li>
+				    <li><a href="#"><strong>Wyloguj</strong></a></li>
+				</ul>
+		</div>
+		<div>
+		<h2 class="col-xs-7 ">Witaj, uzytkowniku!</h2>
+		</div>
+	</div>
+	
+	<nav class="panel with-nav-tabs panel-default">
+  		<div class="container panel-heading">
+			<ul class="nav nav-tabs">
+				  <li class="active col-xs-3"><a href="#Wyszukiwarka" data-toggle="tab"><i class="glyphicon glyphicon-search "></i> Wyszukiwarka</a></li>
+				  <li class="col-xs-3"><a href="#Test" data-toggle="tab"><i class="glyphicon glyphicon-pencil"></i> Test</a></li>
+				  <li class="col-xs-3"><a href="#Ulubione" data-toggle="tab"><i class="glyphicon glyphicon-star"></i> Ulubione</a></li>
+				  <li class="col-xs-3"><a href="#Sugerowane" data-toggle="tab"><i class="glyphicon glyphicon-education"></i> Sugerowane</a></li>
+			</ul>
+		</div>
+	</nav>	
+
+	<div class="panel-body">
+       	<div class="tab-content">
+          	<div class="tab-pane fade in active" id="Wyszukiwarka">
+          		<div class="container col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 nk-bottomLine"">
+					<div class="row"> 
+			      		<form>
+				            <input type="text" class="form-control input-lg" placeholder="Wyszukaj zawód">
+				            </br>
+				            <button type="button" class="btn btn-lg btn-block btn-primary">Szukaj</button>
+				            <button type="button" class="btn btn-lg btn-block btn-primary">Wyszukiwanie zaawansowane</button>
+                		</form>
+                	</div>
+                </div>
+            </div>
+
+           	<div class="tab-pane" id="Test">
+           		<div class="container col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 nk-bottomLine"">
+					<div class="row"> 
+						<button type="button" class="btn btn-lg btn-block btn-primary">Rozpocznij test</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="Ulubione">
+           		<div class="container col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 nk-bottomLine"">
+					<div class="row"> 
+						<table class="table">
+						  <tbody>
+						    <tr>
+						      <td></td>
+						      <td><a href="#">Front-End Developer</a></td>
+						      <td><button class="btn btn-link" data-toggle="tooltip"  data-placement="top" title="Usuń"><span class="glyphicon glyphicon-remove"></span></button></td>
+						    </tr>
+						    <tr>
+						      <td></td>
+						      <td><a href="#">Szef kuchni</a></td>
+						      <td><button class="btn btn-link" data-toggle="tooltip"  data-placement="top" title="Usuń"><span class="glyphicon glyphicon-remove"></span></button></td>
+						    </tr>
+						    <tr>
+						      <td><a href="#"><i class="glyphicon glyphicon-education"></i></a></td>
+						      <td><a href="#">Urzędnik</a></td>
+						      <td><button class="btn btn-link" data-toggle="tooltip"  data-placement="top" title="Usuń"><span class="glyphicon glyphicon-remove"></span></button></td>
+						    </tr>
+						    <tr>
+						      <td></td>
+						      <td><a href="#">Mechanik samochodowy</a></td>
+						      <td><button class="btn btn-link" data-toggle="tooltip"  data-placement="top" title="Usuń"><span class="glyphicon glyphicon-remove"></span></button></td>
+						    </tr>
+						  </tbody>
+						</table>	
+	            	</div>
+    	    	</div>
+    	    </div>
+    	    <div class="tab-pane" id="Sugerowane">
+           		<div class="container col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 nk-bottomLine"">
+					<div class="row"> 
+						<table class="table">
+						  <tbody>
+						    <tr>
+						      <td><button class="btn btn-link ks-addtofavourites" data-toggle="tooltip"  data-placement="top" title="Dodaj/Usuń do ulubionych"><span class="glyphicon glyphicon-star-empty"></span></button></td>
+						      <td><a href="#">Front-End Developer</a></td>
+						    
+						    </tr>
+						    <tr>
+						      <td><button class="btn btn-link" data-toggle="tooltip"  data-placement="top" title="Dodaj/Usuń do ulubionych"><span class="glyphicon glyphicon-star-empty"></span></button></td>
+						      <td><a href="#">Szef kuchni</a></td>
+						    </tr>
+						    <tr>
+						      <td><button class="btn btn-link" data-toggle="tooltip"  data-placement="top" title="Dodaj/Usuń do ulubionych"><span class="glyphicon glyphicon-star-empty"></span></button></td>
+						      <td><a href="#">Urzędnik</a></td>
+						    </tr>
+						    <tr>
+						      <td><button class="btn btn-link" data-toggle="tooltip"  data-placement="top" title="Dodaj/Usuń do ulubionych"><span class="glyphicon glyphicon-star-empty"></span></button></td>
+						      <td><a href="#">Mechanik samochodowy</a></td>
+						    </tr>
+						  </tbody>
+						</table>	
+					</div>
+				</div>
+    	    </div>
+
+
+     </div>
+     <script>
+	$(document).ready(function(){
+    	$('[data-toggle="tooltip"]').tooltip(); 
+		});
+	$(document).ready(function() {
+  		$('.glyphicon-star-empty').click(function(){
+    		$(this).toggleClass('glyphicon-star-empty').toggleClass('glyphicon-star');
+    	});
+	});
+
+
+
+	</script>
+	<!--<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->    
+</body>
+</html>
